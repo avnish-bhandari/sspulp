@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Symbiosis Skills & Professional University</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Font Awesome 6 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="site-nav">
+  <div class="container d-flex align-items-center justify-content-between" style="min-height: 68px;">
+    <!-- Logo -->
+    <a class="logo-wrap" href="#">
+      <img src="./images/SSPU-updated logo.png" alt="logo" class="img-fluid">
+    </a>
+
+    <!-- Desktop nav -->
+    <div class="nav-right">
+      <ul class="nav-links-list">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#program">Program Highlight</a></li>
+        <li><a href="#admission">Admission Process</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+      </ul>
+      <a href="#" class="nav-apply-btn desktop-only">Apply Now</a>
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile nav dropdown -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#">About Us</a>
+    <a href="#">Why Us</a>
+    <a href="#">Program Highlight</a>
+    <a href="#">Admission Process</a>
+    <a href="#" class="mobile-apply">Apply Now</a>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-photo"></div>
+
+  <div class="container-sm hero-inner">
+
+    <!-- Left: text -->
+    <div class="hero-left">
+      <div class="hero-badge">India's 1st Ranked Skill University</div>
+      <p class="hero-sub-text">Lead the India's</p>
+      <h1 class="hero-main-title">Auto EV Revolution at</h1>
+      <p class="hero-desc-text">Study B.Tech Automobile Engineering</p>
+    </div>
+
+    <!-- Right: form -->
+    <div class="hero-right">
+      <div class="form-card">
+        <p class="admit-label">Admission Open</p>
+        <h2 class="apply-heading">Apply Now</h2>
+
+        <form id="applyForm" novalidate>
+          <input type="text" id="fullName" placeholder="Full Name" required/>
+
+          <div class="form-row-2">
+            <input type="email" id="email" placeholder="Email" required/>
+            <input type="tel" id="phone" placeholder="Phone" required maxlength="10" pattern="[0-9]{10}"/>
+          </div>
+
+          <input type="text" id="country" value="India" readonly/>
+
+          <div class="select-wrap">
+            <select id="stateSelect" required>
+              <option value="" disabled selected>Select State</option>
+              <!-- Options... -->
+            </select>
+          </div>
+
+          <div class="select-wrap">
+            <select id="citySelect" required disabled>
+              <option value="" disabled selected>Select City</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-form-submit" id="submitBtn">Apply Now</button>
+        </form>
+
+        <div class="success-box" id="successBox">
+          <div class="success-icon">&#10003;</div>
+          <h5>Application Submitted!</h5>
+          <p>Our admissions team will contact you shortly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE "SKILL" DIFFERENCE SECTION ============ -->
+<section class="skill-difference">
+  <div class="container-sm">
+    <div class="row align-items-start g-4 g-lg-5">
+
+      <!-- Left Content -->
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <h2 class="skill-title">
+          The <span class="highlight">"Skill"</span><br>Difference
+        </h2>
+        <p class="skill-subtitle">
+          SSPU Advantage: From Classroom to Corporate
+        </p>
+        <p class="skill-description">
+          Lorem ipsum dolor sit amet, animal lucilius dissentias ex per, ei duo soleat eloquentiam. Sea cu odio cotidieque, nec ad discere delenit facilisi.
+        </p>
+        <a href="#" class="btn btn-apply d-inline-block text-decoration-none">Apply Now</a>
+      </div>
+
+      <!-- Right Cards -->
+      <div class="col-lg-8">
+        <div class="row g-3">
+
+          <!-- Card 1 - Industrial Training -->
+          <div class="col-md-4">
+            <div class="skill-card">
+              <img src="./images/industrial.JPG" alt="Industrial Training">
+              <div class="skill-card-overlay">
+                <h4 class="skill-card-title">Industrial Training</h4>
+                <ul class="skill-card-list">
+                  <li>Two Major Internships.</li>
+                  <li>Graduate with real work experience.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 - 70% Hands-On -->
+          <div class="col-md-4">
+            <div class="skill-card">
+              <img src="./images/handson.JPG" alt="Hands-On Training">
+              <div class="skill-card-overlay">
+                <h4 class="skill-card-title">70% Hands-On Training &amp; 30% Theory</h4>
+                <p class="skill-card-text">We flipped the script. Spend the majority of your time in specialized labs and workshops, not just lecture halls.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 - Skill Certified -->
+          <div class="col-md-4">
+            <div class="skill-card">
+              <img src="./images/skill.JPG" alt="Skill Certified">
+              <div class="skill-card-overlay">
+                <h4 class="skill-card-title">Skill Certified</h4>
+                <p class="skill-card-text">Get NSDC-Future Skills Certification embedded directly into your B.Tech program, verifying your technical competencies to employers.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ============ END SKILL DIFFERENCE SECTION ============ -->
+
+<!-- ============ ABOUT SSPU SECTION ============ -->
+<section class="about-sspu-section" id="about">
+  <div class="container-sm">
+
+    <!-- Image + Text Row -->
+    <div class="row align-items-start g-4 g-lg-5 mb-5">
+      <div class="col-lg-6">
+        <div class="about-image-wrapper">
+          <img src="./images/about.JPG" alt="SSPU Campus">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="about-header">
+          <h2>About <span class="red-text">SSPU</span></h2>
+        </div>
+        <p class="about-paragraph mt-3">
+          Symbiosis Skills and Professional University (Formerly known as Symbiosis Skills and Open University) is a premier university that provides skill learning to students. It is the first Skill University that emphasizes on hands-on training to prepare young minds for the future. The 'State of Art' campus has been constructed on 15 acres of land with specialized laboratories, workshops, and centers of excellence having specialized skill training equipment and machines.
+        </p>
+        <p class="about-paragraph">
+          The University is offering Certificates, Diplomas, and Degree programs in high-growth sectors such as Automobile, Construction, Mechatronics, Computer Science &amp; IT (Cyber Security), Architecture, Retail and Ecommerce, Ports &amp; Terminal Management, Beauty &amp; Wellness, Data Science, Digital Media, Nutritional Sciences etc. with multi entry-exit and credit banking options.
+        </p>
+      </div>
+    </div>
+
+    <!-- Why Choose SSPU Stats -->
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h3 class="why-choose-title">Why Choose SSPU</h3>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-3 mb-lg-0">
+        <div class="stat-box d-flex align-items-center gap-3">
+          <div class="stat-number-box">#1</div>
+          <span class="stat-label">NIRF Ranking<br>in Skill University</span>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-3 mb-lg-0">
+        <div class="stat-box d-flex align-items-center gap-3">
+          <div class="stat-number-box">15</div>
+          <span class="stat-label">Acre State<br>of art campus</span>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="stat-box d-flex align-items-center gap-3">
+          <div class="stat-number-box">25</div>
+          <span class="stat-label">Different<br>Programs Offered</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ============ END ABOUT SSPU SECTION ============ -->
+
+<!-- ============ PROGRAM HIGHLIGHTS SECTION ============ -->
+<section class="program-highlights-section" id="program">
+  <div class="container-sm">
+    <div class="row align-items-start g-4">
+
+      <!-- Left: Title + Cards -->
+      <div class="col-lg-7">
+        <h2 class="ph-title">Program Highlights</h2>
+        <p class="ph-subtitle">Mastering Modern Mobility Designed with inputs from industry giants</p>
+
+        <!-- E-Mobility (RED) -->
+        <div class="ph-card ph-card-red">
+          <div class="ph-icon-box">
+            <i class="bi bi-ev-front"></i>
+          </div>
+          <div>
+            <h4 class="ph-card-heading">E-Mobility</h4>
+            <p class="ph-card-subheading">Battery management systems and EV powertrain architecture</p>
+            <p class="ph-card-text">Mea ex invidunt philosophia, sit sale utinam alienum at, no pri quidam patrioque expetendis. In magna congue aperiri pri, his ea meliore postulant inciderint.</p>
+          </div>
+        </div>
+
+        <!-- Vehicle Dynamics -->
+        <div class="ph-card ph-card-dark">
+          <div class="ph-icon-box">
+            <i class="bi bi-car-front-fill"></i>
+          </div>
+          <div>
+            <h4 class="ph-card-heading">Vehicle Dynamics</h4>
+            <p class="ph-card-subheading">Suspension, steering, and braking systems design.</p>
+          </div>
+        </div>
+
+        <!-- Auto-Electronics -->
+        <div class="ph-card ph-card-dark">
+          <div class="ph-icon-box">
+            <i class="bi bi-cpu-fill"></i>
+          </div>
+          <div>
+            <h4 class="ph-card-heading">Auto-Electronics</h4>
+            <p class="ph-card-subheading">Sensors, actuators, and ECU programming.</p>
+          </div>
+        </div>
+
+        <!-- Design Tech -->
+        <div class="ph-card ph-card-dark">
+          <div class="ph-icon-box">
+            <i class="bi bi-3-square-fill"></i>
+          </div>
+          <div>
+            <h4 class="ph-card-heading">Design Tech</h4>
+            <p class="ph-card-subheading">Advanced CAD/CAM and 3D Prototyping</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Info Panel -->
+      <div class="col-lg-5">
+        <div class="ph-info-panel">
+
+          <!-- Duration -->
+          <div class="ph-info-item">
+            <div class="ph-info-icon-label">
+              <i class="fa-solid fa-clock ph-info-icon ph-info-icon-red"></i>
+              <span class="ph-info-label">Duration</span>
+            </div>
+            <p class="ph-info-value">4 Years (8 Semesters)</p>
+          </div>
+
+          <!-- Intake -->
+          <div class="ph-info-item">
+            <div class="ph-info-icon-label">
+              <i class="fa-solid fa-users ph-info-icon ph-info-icon-red"></i>
+              <span class="ph-info-label">Intake</span>
+            </div>
+            <p class="ph-info-value">60 Seats</p>
+          </div>
+
+          <!-- Eligibility -->
+          <div class="ph-info-item">
+            <div class="ph-info-icon-label">
+              <i class="fa-solid fa-graduation-cap ph-info-icon ph-info-icon-red"></i>
+              <span class="ph-info-label">Eligibility</span>
+            </div>
+            <div class="ph-info-value">
+              <strong>10+2 candidates:</strong> Passed with Physics &amp; Math (compulsory) + Chem/Bio/IT/Tech Vocational. Min 50% marks (45% for reserved categories).<br><br>
+              <strong>Diploma holders:</strong> Min 3-year Diploma with 50% marks (eligible for First Year or Lateral Entry to Second Year).
+            </div>
+          </div>
+
+          <!-- Entrance Exams -->
+          <div class="ph-info-item">
+            <div class="ph-info-icon-label">
+              <i class="fa-solid fa-file-lines ph-info-icon ph-info-icon-red"></i>
+              <span class="ph-info-label">Entrance Exams</span>
+            </div>
+            <p class="ph-info-value">JEE Main, MHT-CET, CUET, or Symbiosis Engineering Entrance Test (SEET).</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ============ END PROGRAM HIGHLIGHTS SECTION ============ -->
+
+<!-- ============ INFRASTRUCTURE SPOTLIGHT SECTION ============ -->
+<section class="infra-spotlight-section">
+  <div class="infra-bg-overlay"></div>
+  <div class="container position-relative" style="z-index: 2;">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center">
+        <h2 class="infra-title">Infrastructure Spotlight</h2>
+        <p class="infra-subtitle">
+          Lorem ipsum dolor sit amet, at pri nobis temporibus. Vide propriae adipiscing at qui, eum labore consequat quaerendum cu. Ridens putant ius at. Has no lorem graeci discere, melius fuisset cum te.
+        </p>
+      </div>
+    </div>
+
+    <div class="infra-swiper-wrapper">
+      <!-- Navigation Arrows -->
+      <div class="infra-swiper-arrow infra-swiper-prev" id="infraPrev">
+        <i class="bi bi-chevron-left"></i>
+      </div>
+      <div class="infra-swiper-arrow infra-swiper-next" id="infraNext">
+        <i class="bi bi-chevron-right"></i>
+      </div>
+
+      <!-- Swiper Slider -->
+      <div class="swiper infraSwiper">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="infra-slide-card">
+              <img src="./images/infra1.JPG" alt="Simulated Industrial Environments">
+              <div class="infra-slide-overlay">
+                <h5 class="infra-slide-title">Simulated Industrial<br>Environments</h5>
+                <a href="#" class="infra-slide-btn">
+                  <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="infra-slide-card">
+              <img src="./images/infra2.JPG" alt="German Machinery Labs">
+              <div class="infra-slide-overlay">
+                <h5 class="infra-slide-title">German<br>Machinery Labs</h5>
+                <a href="#" class="infra-slide-btn">
+                  <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="infra-slide-card">
+              <img src="./images/infra3.JPG" alt="Vehicle Diagnostic Bays">
+              <div class="infra-slide-overlay">
+                <h5 class="infra-slide-title">Vehicle<br>Diagnostic Bays</h5>
+                <a href="#" class="infra-slide-btn">
+                  <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="infra-slide-card">
+              <img src="./images/infra4.JPG" alt="Lucas TVS Setups">
+              <div class="infra-slide-overlay">
+                <h5 class="infra-slide-title">Lucas TVS<br>Setups</h5>
+                <a href="#" class="infra-slide-btn">
+                  <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="swiper-slide">
+            <div class="infra-slide-card">
+              <img src="./images/infra5.JPG" alt="Smart Factory Setup">
+              <div class="infra-slide-overlay">
+                <h5 class="infra-slide-title">Smart<br>Factory Setup</h5>
+                <a href="#" class="infra-slide-btn">
+                  <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ============ END INFRASTRUCTURE SPOTLIGHT SECTION ============ -->
+
+<!-- ============ ADMISSIONS PROCESS SECTION ============ -->
+<section class="admissions-process-section" id="admission">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center">
+        <h2 class="ap-title">Admissions Process</h2>
+        <p class="ap-subtitle">Complete the following steps to secure your admission.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center g-3 g-lg-4">
+
+      <!-- Step 01 -->
+      <div class="col-sm-6 col-lg">
+        <div class="ap-step-card">
+          <div class="ap-step-number">01</div>
+          <h4 class="ap-step-heading">Register</h4>
+          <p class="ap-step-text">Create your account to begin the application process.</p>
+          <div class="ap-step-icon">
+            <i class="bi bi-card-text"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 02 -->
+      <div class="col-sm-6 col-lg">
+        <div class="ap-step-card">
+          <div class="ap-step-number">02</div>
+          <h4 class="ap-step-heading">Application Form</h4>
+          <p class="ap-step-text">Fill up the application form, pay Rs. 1000, and reserve your interview time slot.</p>
+          <div class="ap-step-icon">
+            <i class="bi bi-file-earmark-text-fill"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 03 -->
+      <div class="col-sm-6 col-lg">
+        <div class="ap-step-card">
+          <div class="ap-step-number">03</div>
+          <h4 class="ap-step-heading">Personal Interview</h4>
+          <p class="ap-step-text">Appear for your personal interview (Online/ Telephonic/In Person).</p>
+          <div class="ap-step-icon">
+            <i class="bi bi-person-fill"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 04 -->
+      <div class="col-sm-6 col-lg">
+        <div class="ap-step-card">
+          <div class="ap-step-number">04</div>
+          <h4 class="ap-step-heading">Selection Letter</h4>
+          <p class="ap-step-text">If selected, you'll receive a provisional selection letter via email.</p>
+          <div class="ap-step-icon">
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 05 -->
+      <div class="col-sm-6 col-lg">
+        <div class="ap-step-card">
+          <div class="ap-step-number">05</div>
+          <h4 class="ap-step-heading">Update Scores</h4>
+          <p class="ap-step-text">Update your XII Std. scores and upload your mark sheet after results are declared.</p>
+          <div class="ap-step-icon">
+            <i class="bi bi-pencil-square"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Apply Now Button -->
+    <div class="text-center mt-5">
+      <a href="#" class="ap-apply-btn">Apply Now</a>
+    </div>
+
+  </div>
+</section>
+<!-- ============ END ADMISSIONS PROCESS SECTION ============ -->
+
+<!-- ============ INDUSTRY PARTNERS & PLACEMENTS SECTION ============ -->
+<section class="partners-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center">
+        <h2 class="partners-title">Industry Partners &amp; Placements</h2>
+        <p class="partners-subtitle">Our campus is a recruitment hub for leading automotive giants.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="partners-swiper-wrapper">
+    <div class="swiper partnersSwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Logo 1 - AMTOI -->
+        <div class="swiper-slide">
+          <div class="partner-logo-card">
+            <img src="./images/amtoi.png" alt="AMTOI">
+          </div>
+        </div>
+
+        <!-- Logo 2 - ICICI Bank -->
+        <div class="swiper-slide">
+          <div class="partner-logo-card">
+            <img src="./images/icici.png" alt="ICICI Bank">
+          </div>
+        </div>
+
+        <!-- Logo 3 - S (placeholder) -->
+        <div class="swiper-slide">
+          <div class="partner-logo-card">
+            <img src="./images/s.png" alt="Partner">
+          </div>
+        </div>
+
+        <!-- Logo 4 - Enrich -->
+        <div class="swiper-slide">
+          <div class="partner-logo-card">
+            <img src="./images/enrich.png" alt="Enrich">
+          </div>
+        </div>
+
+        <!-- Logo 5 - BWSSC -->
+        <div class="swiper-slide">
+          <div class="partner-logo-card">
+            <img src="./images/bwssc.png" alt="BWSSC">
+          </div>
+        </div>
+
+        <!-- Logo 6 - LSC -->
+        <div class="swiper-slide">
+          <div class="partner-logo-card">
+            <img src="./images/lsc.png" alt="LSC">
+          </div>
+        </div>
+
+        <!-- Logo 7 - AMTOI (duplicate for loop) -->
+        <div class="swiper-slide">
+          <div class="partner-logo-card">
+            <img src="./images/amtoi.png" alt="AMTOI">
+          </div>
+        </div>
+
+        <!-- Logo 8 - ICICI Bank (duplicate for loop) -->
+        <div class="swiper-slide">
+          <div class="partner-logo-card">
+            <img src="./images/icici.png" alt="ICICI Bank">
+          </div>
+        </div>
+
+        <!-- Logo 9 - S (placeholder) -->
+        <div class="swiper-slide">
+          <div class="partner-logo-card">
+            <img src="./images/s.png" alt="Partner">
+          </div>
+        </div>
+
+        <!-- Logo 10 - Enrich -->
+        <div class="swiper-slide">
+          <div class="partner-logo-card">
+            <img src="./images/enrich.png" alt="Enrich">
+          </div>
+        </div>
+
+        <!-- Logo 11 - BWSSC -->
+        <div class="swiper-slide">
+          <div class="partner-logo-card">
+            <img src="./images/bwssc.png" alt="BWSSC">
+          </div>
+        </div>
+
+        <!-- Logo 12 - LSC -->
+        <div class="swiper-slide">
+          <div class="partner-logo-card">
+            <img src="./images/lsc.png" alt="LSC">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ============ END PARTNERS SECTION ============ -->
+
+<!-- ============ JOB OPPORTUNITIES SECTION ============ -->
+<section class="job-opps-section">
+    <div class="container">
+        <h2 class="job-opps-title">Job Oppurtunities</h2>
+    </div>
+    <div class="swiper job-opps-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><div class="job-tag">Trainee Automobile</div></div>
+            <div class="swiper-slide"><div class="job-tag">Automotive Service Advisor</div></div>
+            <div class="swiper-slide"><div class="job-tag">Trainer (Electric Vehicles) Automotive</div></div>
+            <div class="swiper-slide"><div class="job-tag">Service Technicians</div></div>
+            <div class="swiper-slide"><div class="job-tag">Technician Electric Vehicle</div></div>
+            <div class="swiper-slide"><div class="job-tag">Automotive Electrician</div></div>
+            <div class="swiper-slide"><div class="job-tag">EV Battery Engineer</div></div>
+            <div class="swiper-slide"><div class="job-tag">Vehicle Dynamics Engineer</div></div>
+            <div class="swiper-slide"><div class="job-tag">Automobile Design Engineer</div></div>
+            <div class="swiper-slide"><div class="job-tag">Quality Control Inspector</div></div>
+        </div>
+    </div>
+</section>
+<!-- ============ END JOB OPPORTUNITIES SECTION ============ -->
+
+<!-- ============ FACILITIES SECTION ============ -->
+<section class="facilities-section" id="facilities">
+  <div class="facilities-bg-image"></div>
+  <div class="container">
+
+    <!-- Logo Banner -->
+    <div class="facilities-logo-wrap">
+      <div class="facilities-logo-box">
+        <div class="facilities-logo-text">
+          SYMBIOSIS SKILLS &amp;<br>PROFESSIONAL UNIVERSITY
+        </div>
+        <div class="facilities-logo-sub">A Symbiosis Skills University, Pune</div>
+      </div>
+    </div>
+
+    <div class="facilities-main">
+      <div class="row g-4">
+
+        <!-- Left Sidebar -->
+        <div class="col-lg-4">
+          <div class="fac-sidebar">
+            <div class="fac-sidebar-card">
+              <div class="fac-sidebar-icon">
+                <i class="bi bi-mortarboard"></i>
+              </div>
+              <div class="fac-sidebar-big">700</div>
+              <p class="fac-sidebar-label">Students Capacity</p>
+            </div>
+            <div class="fac-sidebar-card">
+              <div class="fac-sidebar-icon">
+                <i class="bi bi-building"></i>
+              </div>
+              <div class="fac-sidebar-big">Twin</div>
+              <p class="fac-sidebar-label">6-Storey Buildings</p>
+            </div>
+            <div class="fac-sidebar-card">
+              <div class="fac-sidebar-icon">
+                <i class="bi bi-gender-ambiguous"></i>
+              </div>
+              <div class="fac-sidebar-big">Separate</div>
+              <p class="fac-sidebar-label">Hostels For Boys And Girls</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="col-lg-8">
+          <h2 class="fac-heading">Facilities</h2>
+          <div class="fac-grid">
+            <div class="fac-card">
+              <h4 class="fac-card-title">AC / Non-AC Rooms</h4>
+              <p class="fac-card-text">Single, Twin And Triple Sharing Rooms With Attached Bathrooms &amp; Wardrobes</p>
+            </div>
+            <div class="fac-card">
+              <h4 class="fac-card-title">Nutritious Meals</h4>
+              <p class="fac-card-text">Breakfast, Lunch, Evening Snacks &amp; Dinner With Hygienic Veg &amp; Non-Veg Menu.</p>
+            </div>
+            <div class="fac-card">
+              <h4 class="fac-card-title">Recreation &amp; Sports</h4>
+              <p class="fac-card-text">Gym, Indoor Games, Outdoor Sports And A Recreation Room With TV &amp; Newspapers.</p>
+            </div>
+            <div class="fac-card">
+              <h4 class="fac-card-title">24×7 Security &amp; CCTV</h4>
+              <p class="fac-card-text">CCTV Cameras At All Entrances With Dedicated Round-The-Clock Security Staff.</p>
+            </div>
+            <div class="fac-card">
+              <h4 class="fac-card-title">24×7 Medical Support</h4>
+              <p class="fac-card-text">On-Campus Medical Facility Available Round The Clock For Emergencies.</p>
+            </div>
+            <div class="fac-card">
+              <h4 class="fac-card-title">High-Speed Wi-Fi</h4>
+              <p class="fac-card-text">24×7 Campus-Wide Wi-Fi Internet Connectivity For Students.</p>
+            </div>
+            <div class="fac-card">
+              <h4 class="fac-card-title">Cafeteria And Amphitheatre</h4>
+              <p class="fac-card-text">A Vibrant Social Zone Where Food, Conversations And Events Come Together.</p>
+            </div>
+            <div class="fac-card">
+              <h4 class="fac-card-title">Study Room</h4>
+              <p class="fac-card-text">Quiet, Bright Spaces With Individual Desks And Fast Wi-Fi For Students.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ============ END FACILITIES SECTION ============ -->
+
+<!-- ============ FOOTER SECTION ============ -->
+<footer class="footer-section">
+  <div class="container">
+
+    <div class="footer-main">
+
+      <!-- Left: Logo + About + Socials -->
+      <div class="footer-left">
+        <div class="footer-logo-row">
+          <div>
+            <img src="./images/SSPU-updated logo.png" alt="" class="img-fluid" style="width: 250px;">
+          </div>
+        </div>
+
+        <p class="footer-about-text">
+          Symbiosis Skills and Professional University (Formerly known as Symbiosis Skills and Open University) is a premier university that provides skill learning to students. It is the first Skill University that emphasizes on hands-on training to prepare young minds for the future.
+        </p>
+
+        <div class="footer-socials">
+          <a href="#" class="footer-social-link" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="YouTube">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Get In Touch -->
+      <div class="footer-right">
+        <h4 class="footer-getintouch-title">Get In Touch</h4>
+
+        <div class="footer-contact-item">
+          <i class="bi bi-geo-alt-fill footer-contact-icon"></i>
+          <p class="footer-contact-text">
+            Village - Kiwale, Adjoining Pune Mumbai Expressway Pune – 412101, Maharashtra, India.
+          </p>
+        </div>
+
+        <div class="footer-contact-item">
+          <i class="bi bi-telephone-fill footer-contact-icon"></i>
+          <p class="footer-contact-text">077966 95604</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <p class="footer-copyright">
+        Copyright © 2026 Symbiosis Skills and Professional University. All rights reserved.
+      </p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <span class="sep">|</span>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+<!-- ============ END FOOTER SECTION ============ -->
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  var infraSwiper = new Swiper('.infraSwiper', {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    loop: true,
+    speed: 500,
+    navigation: {
+      nextEl: '#infraNext',
+      prevEl: '#infraPrev',
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 1.5,
+        spaceBetween: 16,
+      },
+      768: {
+        slidesPerView: 2.2,
+        spaceBetween: 16,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 16,
+      },
+      1200: {
+        slidesPerView: 3.5,
+        spaceBetween: 16,
+      },
+    },
+  });
+</script>
+
+<script>
+  var partnersSwiper = new Swiper('.partnersSwiper', {
+    slidesPerView: 2,
+    spaceBetween: 16,
+    loop: true,
+    speed: 3000,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: false,
+    },
+    freeMode: true,
+    breakpoints: {
+      576: {
+        slidesPerView: 3,
+        spaceBetween: 16,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 16,
+      },
+      992: {
+        slidesPerView: 5,
+        spaceBetween: 16,
+      },
+      1200: {
+        slidesPerView: 6,
+        spaceBetween: 16,
+      },
+    },
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
