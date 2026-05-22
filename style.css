@@ -299,7 +299,7 @@ body {
 .hero-photo {
   position: absolute;
   inset: 0;
-  background: url("./images/banner.JPG")
+  background: url("./images/banner.jpg")
     center center / cover no-repeat;
   z-index: 0;
 }
@@ -905,7 +905,7 @@ body {
       rgba(204, 17, 34, 0.85) 0%,
       rgba(255, 30, 36, 0.75) 100%
     ),
-    url("./images/infrabg.JPG")
+    url("./images/infrabg.jpg")
       center/cover no-repeat;
   z-index: 1;
 }
